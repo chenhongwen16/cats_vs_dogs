@@ -30,7 +30,7 @@ def get_one_image(img_list):
 
 def evaluate_one_image():
     # 修改成自己测试集的文件夹路径
-    test_dir = 'D:/WorkSpace/work_to_pycharm/cats_vs_dogs/data/test/'
+    test_dir = 'D:/CHEN/IRSA/CodeDeepLearning/cats_vs_dogs/data/test/'
     # test_dir = '/home/user/Dataset/cats_vs_dogs/test/'
 
     test_img = input_data.get_files(test_dir)[0]   # 获取测试集的图片路径列表
@@ -50,7 +50,7 @@ def evaluate_one_image():
         x = tf.placeholder(tf.float32, shape=[208, 208, 3])         # x变量用于占位，输入的数据要满足这里定的shape
 
         # 修改成自己训练好的模型路径
-        logs_train_dir = 'D:/WorkSpace/work_to_pycharm/cats_vs_dogs/log/'
+        logs_train_dir = 'D:/CHEN/IRSA/CodeDeepLearning/cats_vs_dogs/log'
 
         saver = tf.train.Saver()
 
